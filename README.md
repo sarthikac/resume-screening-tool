@@ -8,7 +8,8 @@ Features:
 - Parses key sections (skills, education, experience) using spaCy
 - Computes cosine similarity between candidate profiles and job descriptions using SBERT
 - Ranks candidates and displays extracted info in an interactive dashboard
-
+  
+## 📁 Repository Structure
 ```
 resume-screening-tool/
 ├── app.py                   # Main Streamlit application
