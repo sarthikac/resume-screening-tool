@@ -21,7 +21,7 @@ resume-screening-tool/
 │   └── workflows/
 │       └── docker-deploy.yml  # GitHub Actions for Docker deployment
 ├── README.md                # Project overview and instructions
-└── sample_resumes/          # Folder for sample PDF resumes (optional)
+└── sample_resumes/          # Folder for sample PDF resumes
 ```
 
 ---
