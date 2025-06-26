@@ -9,7 +9,7 @@ Features:
 - Computes cosine similarity between candidate profiles and job descriptions using SBERT
 - Ranks candidates and displays extracted info in an interactive dashboard
 
-Repository Structure:
+```
 resume-screening-tool/
 ├── app.py                   # Main Streamlit application
 ├── requirements.txt         # Python dependencies
@@ -20,4 +20,8 @@ resume-screening-tool/
 │   └── workflows/
 │       └── docker-deploy.yml  # GitHub Actions for Docker deployment
 ├── README.md                # Project overview and instructions
-└── sample_resumes/          # Folder for sample PDF resumes
+└── sample_resumes/          # Folder for sample PDF resumes (optional)
+```
+
+---
+
