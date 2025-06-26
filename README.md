@@ -1,5 +1,5 @@
 # resume-screening-tool
-AI Powered Resume Screening Tool
+## AI Powered Resume Screening Tool
 
 This repository contains a Streamlit web app that uses NLP and sentence embeddings to extract and rank candidate resumes based on job descriptions.
 
