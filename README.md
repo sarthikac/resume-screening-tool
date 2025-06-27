@@ -4,9 +4,12 @@
 This repository contains a Streamlit web app that uses NLP and sentence embeddings to extract and rank candidate resumes based on job descriptions.
 
 ## Features:
-- Extracts text from PDF resumes
-- Parses key sections (skills, education, experience) using spaCy
+- Extracts text from PDF, DOCX, and TXT resumes
+- Parses key sections (skills, education, experience) using spaCy and transformer-based classifiers
+- Extracts organizations and job titles using Named Entity Recognition (NER)
+- Fine-tuned section extraction using rules and learned models
 - Computes cosine similarity between candidate profiles and job descriptions using SBERT
+- Clusters similar resumes using KMeans
 - Ranks candidates and displays extracted info in an interactive dashboard
   
 ## Repository Structure
