@@ -1,0 +1,7 @@
+streamlit
+PyMuPDF
+spacy
+python-docx
+scikit-learn
+sentence-transformers
+torch
