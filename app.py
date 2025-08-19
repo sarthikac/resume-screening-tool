@@ -69,7 +69,12 @@ if uploaded_files and job_desc:
     embeddings = []
     for file in uploaded_files:
         score, sections, emb = process_resume(file, job_desc)
-        embeddings.append(emb.cpu().numpy())
+        import numpy as np
+        try:
+            embeddings.append(emb.cpu().numpy())
+        except Exception as e:
+            st.error(f"NumPy conversion failed: {e}")
+            embeddings.append(emb.cpu().detach().tolist())  # fallback to plain Python list
         results.append((file.name, score, sections))
 
     kmeans = KMeans(n_clusters=min(3, len(embeddings)), random_state=42).fit(embeddings)
